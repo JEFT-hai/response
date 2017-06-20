@@ -47,15 +47,15 @@
 11. 响应式广告
 * owl.carousel
   * 引用
-  ···
+  ```
   <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.carousel.min.css">
 	 <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.theme.default.min.css">
   <script src="js/vendor/jquery.min.js"></script>
 	 <script src="js//vendor/owl.carousel.2.1.0/owl.carousel.min.js"></script>
   <script src="js/vendor/picturefill.min.js"></script>
   <script src="js/main.js"></script>
-  ···
-  ···
+  ```
+  ```
   main.js
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -66,8 +66,8 @@
         autoplayHoverPause: true
     });
   });
-  ···
-  ···
+  ```
+  ```
   html
   <div class="ad">
 			<div class="owl-carousel owl-theme">
@@ -94,4 +94,4 @@
 				</div>
 			</div>
 		</div>
-  ···
+  ```
