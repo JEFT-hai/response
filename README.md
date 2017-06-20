@@ -95,3 +95,7 @@
 			</div>
 		</div>
      ```
+12. picture
+* 引入picturefill,(polyfill)
+  * `<script src="js/vendor/picturefill.min.js"></script>`
+* 
