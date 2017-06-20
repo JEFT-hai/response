@@ -55,7 +55,7 @@
   <script src="js/vendor/picturefill.min.js"></script>
   <script src="js/main.js"></script>
   ```
-  main.js
+  * main.js
   ```
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -67,7 +67,7 @@
     });
   });
   ```
-  html
+  * html
   ```
   <div class="ad">
 			<div class="owl-carousel owl-theme">
