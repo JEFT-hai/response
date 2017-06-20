@@ -46,7 +46,7 @@
 10. li + li 除了第一个li
 11. 响应式广告
 * owl.carousel
-  * 引用
+  * 引用
   ```
   <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.carousel.min.css">
 	 <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.theme.default.min.css">
@@ -56,6 +56,7 @@
   <script src="js/main.js"></script>
   ```
   main.js
+  ```
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 1,
@@ -65,7 +66,9 @@
         autoplayHoverPause: true
     });
   });
+  ```
   html
+  ```
   <div class="ad">
 			<div class="owl-carousel owl-theme">
 				<div class="item">
@@ -91,4 +94,4 @@
 				</div>
 			</div>
 		</div>
-     
+     ```
