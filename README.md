@@ -29,3 +29,68 @@
   * 参照物为 根元素html，固定不变
   * 没有设置font-size时，默认设置: 1rem = 16px;
   * html{font-size: 62.5%;} 1rem = 62.5%^16px=10px
+7. 隐藏内容
+* display: none; 不会 占用;
+* visibility: hidden; 空间还在不会压缩;
+8.清除浮动
+* clear: both;
+* overflow: auto/hidden;
+* 父元素也浮动(不推荐);
+* .clearfix:after{c,c,d,h,o,v}
+  * content=".";clear:both;display:block;height: 0;overflow: hidden;visibility: hidden;
+  * .clearfix{ zoom: 1 } 兼容IE6,7
+* .clearfix:after,clearfix:before{ content="";display: table;} .clearfix: after{clear: both;} before可以避免上下margin重合
+* bfc: display: inline-block/table-cell/table-caption; overflow: 除了visibility;position: absolute/fixed;
+9. 媒体查询
+* @media only screen and (max-width:30em;) 1em = 1rem = 16px; @media级别不在html之下
+10. li + li 除了第一个li
+11. 响应式广告
+* owl.carousel
+  * 引用
+  ···
+  <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.carousel.min.css">
+	 <link rel="stylesheet" href="js/vendor/owl.carousel.2.1.0/assets/owl.theme.default.min.css">
+  <script src="js/vendor/jquery.min.js"></script>
+	 <script src="js//vendor/owl.carousel.2.1.0/owl.carousel.min.js"></script>
+  <script src="js/vendor/picturefill.min.js"></script>
+  <script src="js/main.js"></script>
+  ···
+  ···
+  main.js
+  $(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
+  });
+  ···
+  html
+  <div class="ad">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<picture>
+					    <source srcset="img/ad001-l.png" media = "(min-width:50em)">
+					    <source srcset="img/ad001-m.png" media = "(min-width:30em)">
+					    <img src="img/ad001.png">
+					</picture>
+				</div>
+				<div class="item">
+					<picture>
+					    <source srcset="img/ad002-l.png" media = "(min-width:50em)">
+					    <source srcset="img/ad002-m.png" media = "(min-width:30em)">
+					    <img src="img/ad002.png">
+					</picture>
+				</div>
+				<div class="item">
+					<picture>
+					    <source srcset="img/ad003-l.png" media = "(min-width:50em)">
+					    <source srcset="img/ad003-m.png" media = "(min-width:30em)">
+					    <img src="img/ad003.png">
+					</picture>
+				</div>
+			</div>
+		</div>
+  ···
