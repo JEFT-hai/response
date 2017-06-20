@@ -67,6 +67,7 @@
     });
   });
   ···
+  ···
   html
   <div class="ad">
 			<div class="owl-carousel owl-theme">
