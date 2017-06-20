@@ -54,8 +54,6 @@
 	 <script src="js//vendor/owl.carousel.2.1.0/owl.carousel.min.js"></script>
   <script src="js/vendor/picturefill.min.js"></script>
   <script src="js/main.js"></script>
-  ```
-  ```
   main.js
   $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -66,8 +64,6 @@
         autoplayHoverPause: true
     });
   });
-  ```
-  ```
   html
   <div class="ad">
 			<div class="owl-carousel owl-theme">
@@ -94,4 +90,3 @@
 				</div>
 			</div>
 		</div>
-  ```
