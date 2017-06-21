@@ -98,4 +98,6 @@
 12. picture
 * 引入picturefill,(polyfill)
   * `<script src="js/vendor/picturefill.min.js"></script>`
-* 
+13. gulp打包
+* css `<!-- build:css css/combined.css --><!-- endbuild -->`
+* js `<!-- build:js js/combined.js -->	<!-- endbuild -->`
